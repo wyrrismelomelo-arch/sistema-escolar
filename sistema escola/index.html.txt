@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema Escolar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Sistema Escolar</h1>
+
+<!-- LOGIN -->
+
+<div id="login">
+
+<h2>Login</h2>
+
+<input type="text" id="usuario" placeholder="Usuário">
+<input type="password" id="senha" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+
+<p id="erro"></p>
+
+</div>
+
+<!-- PAINEL ALUNO -->
+
+<div id="aluno" class="painel">
+
+<h2>Painel do Aluno</h2>
+
+<h3>Tarefas</h3>
+
+<ul id="lista-tarefas">
+<li>Atividade de matemática</li>
+<li>Leitura de história</li>
+</ul>
+
+<button onclick="logout()">Sair</button>
+
+</div>
+
+<!-- PAINEL PROFESSOR -->
+
+<div id="professor" class="painel">
+
+<h2>Painel do Professor</h2>
+
+<h3>Criar atividade</h3>
+
+<input type="text" id="novaTarefa" placeholder="Digite a atividade">
+
+<button onclick="criarTarefa()">Adicionar</button>
+
+<ul id="tarefas-professor"></ul>
+
+<button onclick="logout()">Sair</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
